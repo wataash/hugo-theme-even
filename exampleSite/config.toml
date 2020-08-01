@@ -1,12 +1,12 @@
-baseURL = "http://localhost:1313/"
+baseURL = "http://blog.wataash.com/"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "Even - A super concise theme for Hugo"
+title = "wataash's blog"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "even"
-enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
+enableGitInfo = true # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
@@ -16,12 +16,19 @@ pygmentsCodefencesGuessSyntax = true
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 5                                              # 首页每页显示的文章数
-disqusShortname = ""      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
+disqusShortname = "wataash"      # disqus_shortname
+googleAnalytics = "UA-69723762-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
+# [languages]
+#   [languages.en]
+#     languageName = "English"
+#   [languages.ja]
+#     title = "wataash's blog（にほんご）"
+#     languageName = "にほんご"
+
 [author]                  # essential                     # 必需
-  name = "olOwOlo"
+  name = "Wataru Ashihara"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -60,8 +67,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Even"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["Hugo", "theme","even"]
-  description = "Hugo theme even example site."
+  # keywords = ["Hugo", "theme","even"]
+  # description = "Hugo theme even example site."
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archivePaginate = 5
